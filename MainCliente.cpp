@@ -13,26 +13,16 @@ main(){
 	cin>>apellidos;
 	cout<<"Ingresar Direccion: ";
 	cin>>direccion;
-	cout<<"Ingresar Fecha_nacimiento: ";
-	cin>>fecha_nacimineto;
+	cout<<"Ingresar su fecha de nacimiento: ";
+	cin>>fecha_nacimiento;
 	cout<<"Ingresar Telefono: ";
 	cin>>telefono;
-	//instancia de un objeto
+	//isntancia de un objeto
 	Cliente obj = Cliente(nombres,apellidos,direccion,fecha_nacimiento,telefono,nit);
 	obj.mostrar();
 	
 	cout<<"Ingresar Nit: ";
 	cin>>nit;
 	obj.setNit(nit);
-	cout<<obj.getNit();
-	
-	/*Cliente obj = Cliente();
-	obj.setNit(nit);
-	obj.setNombres(nombres);
-	obj.setApellidos(apellidos);
-	obj.setDireccion(direccion);
-	obj.setFecha_nacimiento(fecha_nacimiento);
-	obj.setTelefono(telefono);
-	obj.mostrar();*/
-	
-}
+	obj.mostrar();
+	}
